@@ -1,16 +1,41 @@
-## Hi there 👋
+# Ayoub ELMORTAJI Cyberpunk Portfolio
 
-<!--
-**AyoubElmortaji/AyoubElmortaji** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+A premium cyberpunk-neon portfolio built with React + Vite, React Router, and Framer Motion.
 
-Here are some ideas to get you started:
+## Setup
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+```bash
+npm install
+```
+
+## Development
+
+```bash
+npm run dev
+```
+
+## Production build
+
+```bash
+npm run build
+npm run preview
+```
+
+## GitHub Pages (main branch + /docs)
+
+1. Build the site:
+
+```bash
+npm run build
+```
+
+2. In GitHub → Settings → Pages:
+   - Source: **Deploy from a branch**
+   - Branch: **main**
+   - Folder: **/docs**
+
+The site will be served at `https://<github-username>.github.io/AyoubElmortaji/`.
+
+## Content
+
+All content is sourced from `src/content/profile.json`. Update that file to customize the portfolio.
