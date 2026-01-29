@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Cyberpunk neon portfolio" />
+    <title>Ayoub ELMORTAJI | Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="ambient" aria-hidden="true">
+      <div class="ambient__gradient"></div>
+      <div class="ambient__grid"></div>
+      <div class="ambient__dots"></div>
+    </div>
+
+    <header class="navbar" id="navbar"></header>
+
+    <main id="app" class="page"></main>
+
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
+
+    <footer class="footer" id="footer"></footer>
+
+    <div class="toast-stack" id="toastStack" aria-live="polite" aria-atomic="true"></div>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+      <button class="lightbox__close" id="lightboxClose" aria-label="Close gallery">✕</button>
+      <div class="lightbox__content" id="lightboxContent"></div>
+      <div class="lightbox__thumbs" id="lightboxThumbs"></div>
+    </div>
+
+    <script src="app.js" type="module"></script>
+  </body>
+</html>

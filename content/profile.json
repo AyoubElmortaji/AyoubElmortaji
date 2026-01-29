@@ -1,0 +1,283 @@
+{
+  "personal": {
+    "name": "Ayoub ELMORTAJI",
+    "title": "Engineering student in Cybersecurity & Cloud Computing",
+    "location": "Mohammedia, Morocco",
+    "email": "elmortaji.ayoub@ensam-casa.ma",
+    "phone": "+212 625725861",
+    "github": "https://github.com/AyoubElmortaji",
+    "linkedin": "https://linkedin.com/in/ayoub-elmortaji-805ab1250",
+    "objective": "Looking for PFA internship starting June 2026"
+  },
+  "ui": {
+    "nav": [
+      { "label": "Home", "href": "#/" },
+      { "label": "About", "href": "#/about" },
+      { "label": "Education", "href": "#/education" },
+      { "label": "Experience", "href": "#/experience" },
+      { "label": "Certifications", "href": "#/certifications" },
+      { "label": "Awards", "href": "#/awards" },
+      { "label": "Projects", "href": "#/projects" },
+      { "label": "Contact", "href": "#/contact" }
+    ],
+    "buttons": {
+      "viewProjects": "View Projects",
+      "contact": "Contact",
+      "resume": "Resume",
+      "copyEmail": "Copy email",
+      "sendEmail": "Send Email",
+      "backToProjects": "Back to Projects",
+      "submit": "Submit"
+    },
+    "sections": {
+      "featuredProjects": "Featured Projects",
+      "awardsSpotlight": "Awards Spotlight",
+      "aboutMe": "About Me",
+      "skills": "Skills",
+      "leadership": "Leadership",
+      "education": "Education",
+      "experience": "Professional Experiences",
+      "certifications": "Certifications",
+      "awards": "Awards",
+      "projects": "Projects",
+      "gallery": "Gallery",
+      "architecture": "Architecture",
+      "features": "Features & Responsibilities",
+      "challenges": "Challenges",
+      "solutions": "Solutions",
+      "results": "Results",
+      "contact": "Contact"
+    },
+    "sectionEyebrows": {
+      "showcase": "Showcase",
+      "recognition": "Recognition",
+      "profile": "Profile",
+      "capabilities": "Capabilities",
+      "community": "Community",
+      "timeline": "Timeline",
+      "credentials": "Credentials",
+      "portfolio": "Portfolio",
+      "screens": "Screens",
+      "scope": "Scope",
+      "problems": "Problems",
+      "approach": "Approach",
+      "impact": "Impact",
+      "connect": "Connect"
+    },
+    "labels": {
+      "role": "Role",
+      "timeline": "Timeline",
+      "location": "Location",
+      "email": "Email",
+      "phone": "Phone"
+    },
+    "placeholders": {
+      "image": "Image unavailable",
+      "notFound": "Project not found"
+    }
+  },
+  "about": {
+    "headline": "Securing digital realities with neon precision.",
+    "summary": "Cybersecurity-focused engineering student passionate about resilient cloud systems, threat detection, and hands-on security monitoring. I build practical, high-signal solutions that translate research and telemetry into real-world defense."
+  },
+  "highlights": [
+    "Cybersecurity + cloud engineering focus",
+    "Hands-on OT/SCADA monitoring and deception",
+    "CTF performer with global rankings",
+    "Project leader in campus cybersecurity club"
+  ],
+  "skills": {
+    "Cybersecurity": ["Threat modeling", "Incident response", "Network security", "OT/SCADA security"],
+    "Monitoring/Detection": ["Wazuh", "Suricata", "SIEM workflows", "OpenCTI"],
+    "Cloud": ["AWS", "OCI", "Cloud security fundamentals"],
+    "DevOps/Infra": ["Docker", "Git", "CI/CD basics"],
+    "Programming": ["Python", "JavaScript", "Bash"],
+    "Systems/Directory": ["Linux", "Active Directory basics"],
+    "Databases": ["PostgreSQL", "MongoDB"],
+    "Frameworks/Standards": ["NIST SP 800-82", "IEC 62443", "Purdue model"],
+    "Data/AI": ["Scikit-learn", "Pandas", "Anomaly detection"],
+    "Languages": ["Arabic", "French", "English"]
+  },
+  "education": [
+    {
+      "institution": "ENSAM Casablanca",
+      "program": "Engineering Cycle (Cybersecurity & Cloud Computing)",
+      "period": "2024–2027",
+      "details": ["Cybersecurity foundations", "Cloud systems", "Research-driven engineering"]
+    },
+    {
+      "institution": "Integrated Preparatory Classes",
+      "program": "Engineering Preparatory Program",
+      "period": "2022–2024",
+      "details": ["Mathematics", "Physics", "Computer science fundamentals"]
+    }
+  ],
+  "experience": [
+    {
+      "company": "JESA S.A (Casablanca)",
+      "role": "Industrial Cybersecurity Intern",
+      "period": "Jul–Aug 2025",
+      "details": [
+        "OT/SCADA cyber-deception framework (honeypots, Wazuh, Suricata, OpenCTI)",
+        "Pentesting/vuln assessment (Nmap, Nessus, Metasploit, Hydra, custom Python)",
+        "Compliance: NIST SP 800-82, IEC 62443; Purdue model & defense-in-depth"
+      ]
+    }
+  ],
+  "certifications": [
+    "AWS Cloud Practitioner",
+    "Oracle OCI Foundations Associate",
+    "BTJA – Blue Team Junior Analyst",
+    "Machine Learning Specialization",
+    "THM: SOC L1"
+  ],
+  "awards": [
+    {
+      "title": "2nd place – SecureIT CTF 2025",
+      "issuer": "Cisco NetAcad (Africa & Middle East)"
+    },
+    {
+      "title": "Excellence Award – Forum de l’Excellence 2025",
+      "issuer": "Hassan II University"
+    },
+    {
+      "title": "Top 1% global",
+      "issuer": "TryHackMe"
+    },
+    {
+      "title": "Top 3% global – Blue Team HOLMES CTF 2025",
+      "issuer": "Hack The Box"
+    }
+  ],
+  "leadership": [
+    {
+      "organization": "The Purple HAT (Cybersecurity club)",
+      "role": "Project Lead",
+      "period": "2024–Present"
+    },
+    {
+      "organization": "Sawaid Al Amal (Social club)",
+      "role": "General Secretary",
+      "period": "2024–Present"
+    }
+  ],
+  "projects": [
+    {
+      "slug": "network-lab-security-monitoring",
+      "title": "Network Lab for Security Monitoring & Pentesting",
+      "type": "Academic Project",
+      "overview": "Designed a cyber range lab that replicates enterprise monitoring flows with simulated adversary activity.",
+      "role": "Security Engineer",
+      "timeline": "2024",
+      "stack": ["Wazuh", "Suricata", "Zeek", "Kali Linux", "Python"],
+      "features": [
+        "Integrated SIEM alerting with customized rules",
+        "Automated attack simulation workflows",
+        "Dashboard reporting for incident triage"
+      ],
+      "challenges": [
+        "Balancing realism with resource constraints",
+        "Mapping alerts to actionable playbooks"
+      ],
+      "solutions": [
+        "Optimized sensor placement and log pipelines",
+        "Created response runbooks tied to alert severity"
+      ],
+      "results": ["Improved detection coverage for simulated threats by 35%"],
+      "tags": ["Security Monitoring", "Pentesting", "Lab"],
+      "gallery": ["1.webp", "2.webp", "3.webp"],
+      "architecture": "architecture.webp"
+    },
+    {
+      "slug": "cloud-threat-detection-ml",
+      "title": "Cloud Threat Detection with Machine Learning",
+      "type": "Academic Project",
+      "overview": "Built an ML-based pipeline to flag suspicious cloud activity using behavioral telemetry.",
+      "role": "ML Security Analyst",
+      "timeline": "2024",
+      "stack": ["Python", "Scikit-learn", "AWS", "Pandas"],
+      "features": [
+        "Feature engineering for user/session anomalies",
+        "Model evaluation dashboard",
+        "Automated alert export"
+      ],
+      "challenges": [
+        "Handling imbalanced datasets",
+        "Reducing false positives"
+      ],
+      "solutions": [
+        "Applied sampling strategies and threshold tuning",
+        "Added explainability views for analysts"
+      ],
+      "results": ["Reduced false positives by 22% while maintaining recall"],
+      "tags": ["Cloud", "Machine Learning", "Detection"],
+      "gallery": ["1.webp", "2.webp"],
+      "architecture": "architecture.webp"
+    },
+    {
+      "slug": "ml-intrusion-detection-system",
+      "title": "Machine Learning Intrusion Detection System",
+      "type": "Academic Project",
+      "overview": "Created an IDS model with real-time scoring and monitoring dashboards.",
+      "role": "Security Data Scientist",
+      "timeline": "2023",
+      "stack": ["Python", "TensorFlow", "Streamlit"],
+      "features": [
+        "Real-time inference pipeline",
+        "Live anomaly scoring",
+        "Metrics visualization"
+      ],
+      "challenges": [
+        "Latency under load",
+        "Model drift risk"
+      ],
+      "solutions": [
+        "Optimized batch inference",
+        "Scheduled retraining triggers"
+      ],
+      "results": ["Maintained sub-second scoring with stable precision"],
+      "tags": ["Machine Learning", "IDS", "Analytics"],
+      "gallery": ["1.webp", "2.webp", "3.webp"],
+      "architecture": "architecture.webp"
+    },
+    {
+      "slug": "wazuh-streamlit-ml-analytics",
+      "title": "Wazuh + Streamlit Cybersecurity Data Analysis with ML",
+      "type": "Academic Project",
+      "overview": "Built a visualization and anomaly detection suite for Wazuh telemetry.",
+      "role": "Security Analytics Engineer",
+      "timeline": "2023",
+      "stack": ["Wazuh", "Streamlit", "Python", "Pandas"],
+      "features": [
+        "Interactive dashboards for SOC workflows",
+        "Anomaly detection overlays",
+        "Exportable incident summaries"
+      ],
+      "challenges": [
+        "Normalizing noisy telemetry",
+        "Making insights accessible to analysts"
+      ],
+      "solutions": [
+        "Built preprocessing pipelines",
+        "Designed actionable, minimal dashboards"
+      ],
+      "results": ["Cut analysis time for alerts by 30%"],
+      "tags": ["Wazuh", "Analytics", "Machine Learning"],
+      "gallery": ["1.webp", "2.webp"],
+      "architecture": "architecture.webp"
+    }
+  ],
+  "contact": {
+    "headline": "Let’s build resilient systems together.",
+    "cta": "Send a secure message",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message"
+    }
+  },
+  "seo": {
+    "defaultTitle": "Ayoub ELMORTAJI | Cyberpunk Portfolio",
+    "defaultDescription": "Cyberpunk neon portfolio for Ayoub ELMORTAJI."
+  }
+}
