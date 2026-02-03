@@ -5,50 +5,59 @@
 
 <div align="center">
 
-<!-- Row 1 : Programming & Core -->
-<img src="https://skillicons.dev/icons?i=linux" height="46"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redhat/redhat-original.svg" height="46"/>
-<img src="https://skillicons.dev/icons?i=python" height="46"/>
-<img src="https://skillicons.dev/icons?i=bash" height="46"/>
-<img src="https://skillicons.dev/icons?i=c" height="46"/>
-<img src="https://skillicons.dev/icons?i=java" height="46"/>
-<img src="https://skillicons.dev/icons?i=javascript" height="46"/>
-<img src="https://skillicons.dev/icons?i=php" height="46"/>
-<img src="https://skillicons.dev/icons?i=git" height="46"/>
-<img src="https://skillicons.dev/icons?i=github" height="46"/>
+<!-- Row 1 • Programming & OS -->
+<img src="https://img.icons8.com/color/48/000000/linux.png" alt="Linux" />
+<img src="https://img.icons8.com/color/48/000000/python--v1.png" alt="Python" />
+<img src="https://img.icons8.com/color/48/000000/console.png" alt="Bash" />
+<img src="https://img.icons8.com/color/48/000000/c-programming.png" alt="C" />
+<img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png" alt="Java" />
+<img src="https://img.icons8.com/color/48/000000/javascript.png" alt="JavaScript" />
+<img src="https://img.icons8.com/color/48/000000/php.png" alt="PHP" />
 
 <br/><br/>
 
-<!-- Row 2 : Cloud & DevOps -->
-<img src="https://skillicons.dev/icons?i=aws" height="46"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" height="46"/>
-<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/openstack.svg" height="46"/>
-<img src="https://skillicons.dev/icons?i=docker" height="46"/>
-<img src="https://skillicons.dev/icons?i=terraform" height="46"/>
-<img src="https://skillicons.dev/icons?i=ansible" height="46"/>
-<img src="https://skillicons.dev/icons?i=gitlab" height="46"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" height="46"/>
-<img src="https://skillicons.dev/icons?i=mysql" height="46"/>
-<img src="https://skillicons.dev/icons?i=mongodb" height="46"/>
+<!-- Row 2 • Source Control -->
+<img src="https://img.icons8.com/color/48/000000/git.png" alt="Git" />
+<img src="https://img.icons8.com/color/48/000000/github.png" alt="GitHub" />
+<img src="https://img.icons8.com/color/48/000000/gitlab.png" alt="GitLab" />
 
 <br/><br/>
 
-<!-- Row 3 : SOC / Security / Data -->
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/elasticsearch/elasticsearch-original.svg" height="46"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kibana/kibana-original.svg" height="46"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/logstash/logstash-original.svg" height="46"/>
-<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/splunk.svg" height="46"/>
-<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/wazuh.svg" height="46"/>
-<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/fortinet.svg" height="46"/>
-<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/crowdstrike.svg" height="46"/>
-<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/virustotal.svg" height="46"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" height="46"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" height="46"/>
+<!-- Row 3 • Cloud & DevOps -->
+<img src="https://img.icons8.com/color/48/000000/amazon-web-services.png" alt="AWS" />
+<img src="https://img.icons8.com/color/48/000000/oracle.png" alt="Oracle" />
+<img src="https://img.icons8.com/color/48/000000/openstack.png" alt="OpenStack" />
+<img src="https://img.icons8.com/color/48/000000/docker.png" alt="Docker" />
+<img src="https://img.icons8.com/color/48/000000/terraform.png" alt="Terraform" />
+<img src="https://img.icons8.com/color/48/000000/ansible.png" alt="Ansible" />
+
+<br/><br/>
+
+<!-- Row 4 • Databases / Web -->
+<img src="https://img.icons8.com/color/48/000000/mysql-logo.png" alt="MySQL" />
+<img src="https://img.icons8.com/color/48/000000/mongodb.png" alt="MongoDB" />
+<img src="https://img.icons8.com/color/48/000000/nginx.png" alt="Nginx" />
+
+<br/><br/>
+
+<!-- Row 5 • Security & SOC -->
+<img src="https://img.icons8.com/color/48/000000/splunk.png" alt="Splunk" />
+<img src="https://img.icons8.com/color/48/000000/wazuh.png" alt="Wazuh" />
+<img src="https://img.icons8.com/color/48/000000/fortinet.png" alt="Fortinet" />
+<img src="https://img.icons8.com/color/48/000000/crowdstrike.png" alt="CrowdStrike (EDR)" />
+<img src="https://img.icons8.com/color/48/000000/virus.png" alt="Malware Analysis" />
+
+<br/><br/>
+
+<!-- Row 6 • Data & ML -->
+<img src="https://img.icons8.com/color/48/000000/numpy.png" alt="NumPy" />
+<img src="https://img.icons8.com/color/48/000000/pandas.png" alt="Pandas" />
+<img src="https://img.icons8.com/color/48/000000/data-configuration.png" alt="Data" />
 
 </div>
 
 ---
 
 <p align="center">
-  <i>Cybersecurity • SOC • Cloud • Network & System • Automation</i> 🔐
+  <i>Security • SOC • Cloud • Networks • Automation</i> 🔐
 </p>
