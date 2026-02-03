@@ -17,7 +17,7 @@
 <img src="https://skillicons.dev/icons?i=github" height="46"/>
 <img src="https://skillicons.dev/icons?i=gitlab" height="46"/>
 
-<br/><br/>
+<br/>
 
 <!-- Row 2 -->
 <img src="https://skillicons.dev/icons?i=docker" height="46"/>
@@ -31,7 +31,7 @@
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/elasticsearch/elasticsearch-original.svg" height="46"/>
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kibana/kibana-original.svg" height="46"/>
 
-<br/><br/>
+<br/>
 
 <!-- Row 3 -->
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/logstash/logstash-original.svg" height="46"/>
