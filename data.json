@@ -1,0 +1,254 @@
+{
+  "meta": {
+    "siteTitle": "Ayoub ELMORTAJI ",
+    "initials": "AE",
+    "callsign": "AYOUB.ELMORTAJI"
+  },
+  "boot": {
+    "host": "ayoub@elmortaji",
+    "lines": [
+      "Initializing secure shell ...",
+      "Mounting *  ...",
+      "Loading cybersecurity modules ... [OK]",
+      "Establishing encrypted channel ... [OK]",
+      "Decrypting profile data ...",
+      "Access granted. Welcome operator."
+    ]
+  },
+  "nav": [
+    { "label": "about",          "target": "about" },
+    { "label": "skills",         "target": "skills" },
+    { "label": "experience",     "target": "experience" },
+    { "label": "projects",       "target": "projects" },
+    { "label": "articles",       "target": "articles" },
+    { "label": "certs",          "target": "certifications" },
+    { "label": "awards",         "target": "awards" },
+    { "label": "contact",        "target": "contact" }
+  ],
+  "hero": {
+    "name": "Ayoub ELMORTAJI",
+    "prompt": "whoami",
+    "roles": [
+      "Cybersecurity & Cloud Engineering Student",
+      "SOC / Blue Team Analyst",
+      "OT/SCADA Security Researcher",
+      "Penetration Tester",
+      "Cloud Security Practitioner"
+    ],
+    "tagline": "Engineering student specializing in Cybersecurity & Cloud Computing. I build detection pipelines, break into things responsibly, and harden the systems that matter.",
+    "status": {
+      "label": "STATUS",
+      "value": "Seeking PFA internship — available from June 2026 (2 months)"
+    },
+    "ctas": [
+      { "label": "Download CV",   "href": "AYOUB_ELMORTAJI_CV_PFA.pdf", "type": "primary", "icon": "fa-solid fa-download" },
+      { "label": "Get in touch",  "href": "#contact",                   "type": "ghost",   "icon": "fa-solid fa-terminal" }
+    ]
+  },
+  "about": {
+    "heading": "About",
+    "command": "cat profile.md",
+    "paragraphs": [
+      "I'm a 2nd-year engineering student at ENSAM Casablanca, specializing in Cybersecurity & Cloud Computing. My focus sits at the intersection of defensive operations, offensive testing, and cloud infrastructure.",
+      "I've built full SOC environments, deployed deception architectures for industrial OT/SCADA systems, analyzed malware in isolated labs, and trained ML models for intrusion detection. I genuinely enjoy the whole loop — simulating the attack, catching it, and closing the gap.",
+      "Beyond the keyboard, I lead projects for The Purple HAT cybersecurity club and serve as Secretary General of the Sawaid Al Amal social club."
+    ],
+    "facts": [
+      { "label": "Location",   "value": "Mohammedia, Morocco",        "icon": "fa-solid fa-location-dot" },
+      { "label": "Education",  "value": "ENSAM Casablanca · 2024–2027","icon": "fa-solid fa-graduation-cap" },
+      { "label": "Focus",      "value": "Blue Team · Cloud · OT",     "icon": "fa-solid fa-shield-halved" },
+      { "label": "Status",     "value": "Open to PFA internship",      "icon": "fa-solid fa-circle-check" }
+    ]
+  },
+  "stats": [
+    { "value": 5,  "suffix": "+",  "label": "Security projects shipped" },
+    { "value": 7,  "suffix": "",   "label": "Industry certifications" },
+    { "value": 4,  "suffix": "",   "label": "CTF & academic awards" },
+    { "value": 1,  "suffix": "%",  "label": "Top global rank · TryHackMe" }
+  ],
+  "skills": {
+    "heading": "Skills",
+    "command": "ls -la /skills",
+    "categories": [
+      {
+        "name": "Defensive Security",
+        "icon": "fa-solid fa-shield-halved",
+        "items": ["SOC: monitoring, triage & incident response", "SIEM — Wazuh, ELK Stack, Splunk", "IDS/IPS — Suricata, Snort", "Windows/Linux log analysis", "MITRE ATT&CK", "Cyber Threat Intelligence", "Malware analysis"]
+      },
+      {
+        "name": "Offensive Security",
+        "icon": "fa-solid fa-bug",
+        "items": ["Web penetration testing", "OWASP Top 10", "Burp Suite", "OWASP ZAP"]
+      },
+      {
+        "name": "Cloud",
+        "icon": "fa-solid fa-cloud",
+        "items": ["AWS — EC2, S3, IAM, CloudWatch", "AWS — CloudTrail, GuardDuty", "Oracle Cloud (OCI)"]
+      },
+      {
+        "name": "Network & Network Security",
+        "icon": "fa-solid fa-network-wired",
+        "items": ["FortiGate", "OPNsense", "pfSense", "VPN — IPsec / SSL", "SD-WAN", "EVE-NG"]
+      },
+      {
+        "name": "Systems & Virtualization",
+        "icon": "fa-solid fa-server",
+        "items": ["Linux", "Windows Server", "Active Directory", "Proxmox"]
+      },
+      {
+        "name": "DevSecOps & Automation",
+        "icon": "fa-solid fa-gears",
+        "items": ["Terraform", "Ansible", "Docker", "Git", "Grafana", "CI/CD"]
+      },
+      {
+        "name": "Development",
+        "icon": "fa-solid fa-code",
+        "items": ["Python", "C"]
+      }
+    ]
+  },
+  "experience": {
+    "heading": "Experience",
+    "command": "git log --work-history",
+    "jobs": [
+      {
+        "role": "OT Cybersecurity Intern",
+        "company": "JESA S.A",
+        "location": "Casablanca, Morocco",
+        "period": "Jul – Aug 2025",
+        "project": "Cyber-deception architecture for OT/SCADA systems",
+        "highlights": [
+          "Deployed a multi-layer cyber-deception architecture (Purdue model) with 8 Docker honeypots simulating PLC/SCADA environments, capturing and analyzing dozens of simulated attacks.",
+          "Built centralized monitoring with Wazuh, Suricata and OpenCTI, improving threat detection and enrichment through event correlation.",
+          "Ran penetration tests in OT/SCADA environments and assessed vulnerabilities against NIST SP 800-82 and IEC 62443, strengthening the overall security posture."
+        ],
+        "tags": ["OT/SCADA", "Honeypots", "Wazuh", "Suricata", "OpenCTI", "NIST 800-82", "IEC 62443"]
+      }
+    ]
+  },
+  "projects": {
+    "heading": "Projects",
+    "command": "find ./projects -type lab",
+    "note": "// add new projects by appending to this list in data.json",
+    "items": [
+      {
+        "title": "Check Point Firewall Deployment",
+        "subtitle": "ENSAM Datacenter · in progress",
+        "status": "in-progress",
+        "summary": "High-availability Check Point R82 firewall deployment with a secure multi-zone architecture.",
+        "details": [
+          "Deployed Check Point R82 in high availability (ClusterXL) on EVE-NG / Proxmox with a secure multi-zone design.",
+          "Configured Firewall, IPS, IPsec/SSL VPN and Active Directory integration, improving access control and network segmentation."
+        ],
+        "tags": ["Check Point R82", "ClusterXL", "EVE-NG", "Proxmox", "IPS", "VPN", "Active Directory"]
+      },
+      {
+        "title": "SOC Platform — Network Supervision & Attack Simulation",
+        "subtitle": "Detection engineering lab",
+        "status": "done",
+        "summary": "Full SOC platform for centralized detection and Red/Blue team validation.",
+        "details": [
+          "Built a SOC platform on VMware integrating pfSense, Active Directory, Suricata and Wazuh for centralized detection.",
+          "Simulated 15 Red/Blue team scenarios to validate detection rules and improve incident visibility."
+        ],
+        "tags": ["VMware", "pfSense", "Active Directory", "Suricata", "Wazuh", "Red/Blue Team"]
+      },
+      {
+        "title": "Malware Analysis Lab — Static & Dynamic",
+        "subtitle": "Isolated reverse-engineering environment",
+        "status": "done",
+        "summary": "Isolated lab for safely analyzing malware behavior and extracting IOCs.",
+        "details": [
+          "Built a lab with FlareVM, REMnux and INetSim to analyze malware in an isolated environment.",
+          "Performed static and dynamic analysis, producing detailed reports on behavior and indicators of compromise (IOCs)."
+        ],
+        "tags": ["FlareVM", "REMnux", "INetSim", "Static Analysis", "Dynamic Analysis", "IOC"]
+      },
+      {
+        "title": "Machine Learning Intrusion Detection System",
+        "subtitle": "ML-powered IDS · 98% accuracy",
+        "status": "done",
+        "summary": "An IDS driven by ML models reaching 98% accuracy with a live dashboard.",
+        "details": [
+          "Developed an ML-based IDS (Logistic Regression, Random Forest, XGBoost) achieving 98% accuracy.",
+          "Reduced false positives using PCA and built an interactive Streamlit dashboard for visualization."
+        ],
+        "tags": ["Python", "Random Forest", "XGBoost", "PCA", "Streamlit", "Machine Learning"]
+      },
+      {
+        "title": "SOC Anomaly Detection with Wazuh & ML",
+        "subtitle": "Behavioral analytics pipeline",
+        "status": "done",
+        "summary": "Behavioral anomaly detection combining Wazuh telemetry with a custom risk-scoring model.",
+        "details": [
+          "Simulated attacks with Atomic Red Team and collected logs via Wazuh for behavioral analysis.",
+          "Developed a Python model with risk scoring, improving anomaly detection through a Streamlit dashboard."
+        ],
+        "tags": ["Wazuh", "Atomic Red Team", "Python", "Risk Scoring", "Streamlit"]
+      }
+    ]
+  },
+  "articles": {
+    "heading": "Articles",
+    "command": "cat ./blog/*.md",
+    "note": "// add write-ups & articles here in data.json",
+    "items": [
+      {
+        "title": "Sample: Building a SOC Lab from Scratch",
+        "date": "2025",
+        "summary": "A walkthrough of standing up a home SOC with pfSense, Wazuh and Suricata — replace this with your own write-up.",
+        "tags": ["SOC", "Wazuh", "Tutorial"],
+        "href": "#"
+      },
+      {
+        "title": "Sample: CTF Write-up Template",
+        "date": "2025",
+        "summary": "Placeholder for a CTF write-up. Edit data.json to add real articles, links and tags.",
+        "tags": ["CTF", "Write-up"],
+        "href": "#"
+      }
+    ]
+  },
+  "certifications": {
+    "heading": "Certifications",
+    "command": "ls ./certs",
+    "items": [
+      { "name": "AWS Certified Cloud Practitioner", "issuer": "Amazon Web Services", "icon": "fa-brands fa-aws" },
+      { "name": "AWS Cloud Security Foundations",   "issuer": "Amazon Web Services", "icon": "fa-brands fa-aws" },
+      { "name": "Oracle Cloud OCI Foundations Associate", "issuer": "Oracle", "icon": "fa-solid fa-cloud" },
+      { "name": "Fortinet NSE 5 — FortiSASE SD-WAN 7.6", "issuer": "Fortinet", "icon": "fa-solid fa-shield-halved" },
+      { "name": "Blue Team Junior Analyst (BTJA)", "issuer": "Security Blue Team", "icon": "fa-solid fa-user-shield" },
+      { "name": "SOC Level 1", "issuer": "TryHackMe", "icon": "fa-solid fa-terminal" }
+    ]
+  },
+  "awards": {
+    "heading": "Awards & Distinctions",
+    "command": "cat ./achievements.log",
+    "items": [
+      { "title": "2nd Place — SecureIT CTF 2025", "org": "Cisco Networking Academy · Africa & Middle East", "year": "2025" },
+      { "title": "Top 1% Worldwide", "org": "TryHackMe global ranking", "year": "2025" },
+      { "title": "Academic Excellence Prize 2025", "org": "Forum de l'Excellence · Université Hassan II", "year": "2025" },
+      { "title": "2nd Place — MCSC V13 CTF 2026", "org": "INSEC ENSIAS · Beginner Track", "year": "2026" },
+      { "title": "Semi-Finals — MEA & CIS", "org": "NetAcad Cup 2026", "year": "2026" }
+    ]
+  },
+  "leadership": [
+    { "role": "Project Lead", "org": "The Purple HAT — Cybersecurity Club", "period": "2024 – Present" },
+    { "role": "Secretary General", "org": "Sawaid Al Amal — Social Club", "period": "2024 – Present" }
+  ],
+  "contact": {
+    "heading": "Contact",
+    "command": "./connect.sh",
+    "intro": "Open to PFA internship opportunities and security collaborations. Let's talk.",
+    "channels": [
+      { "label": "Email (academic)", "value": "elmortaji.ayoub@ensam-casa.ma", "href": "mailto:elmortaji.ayoub@ensam-casa.ma", "icon": "fa-solid fa-envelope" },
+      { "label": "Email (personal)", "value": "aelmortaji7@gmail.com", "href": "mailto:aelmortaji7@gmail.com", "icon": "fa-solid fa-envelope-open" },
+      { "label": "Phone", "value": "+212 625 725 861", "href": "tel:+212625725861", "icon": "fa-solid fa-phone" },
+      { "label": "LinkedIn", "value": "in/ayoub-elmortaji", "href": "https://www.linkedin.com/in/ayoub-elmortaji", "icon": "fa-brands fa-linkedin" }
+    ]
+  },
+  "footer": {
+    "text": "Designed & built by Ayoub ELMORTAJI",
+    "note": "All rights reserved 2026"
+  }
+}
