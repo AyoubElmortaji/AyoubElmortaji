@@ -1,0 +1,14 @@
+# Normalise line endings: LF in the repository, native in the working copy.
+# Keeps diffs clean when the project is cloned on Windows, macOS and Linux
+# (and on Vercel's Linux build machines).
+* text=auto eol=lf
+
+# Binary assets — never touch these.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.ico binary
+*.pdf binary
+*.woff binary
+*.woff2 binary

@@ -1,0 +1,268 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ==========================================================================
+   THEME TOKENS
+   --------------------------------------------------------------------------
+   To re-skin the whole site, change the three accent knobs below. Every
+   button, link, badge and glow derives from them, in both light and dark mode.
+   Colors are raw HSL channels so Tailwind can apply opacity (e.g. bg-accent/10).
+   ========================================================================== */
+
+@layer base {
+  :root {
+    /* ▸▸ THE ACCENT — change these two lines and the site changes color. ◂◂
+       Examples: cyan 190, violet 265, amber 38, red 4, blue 217.          */
+    --accent-hue: 162;
+    --accent-sat: 84%;
+
+    /* Light theme (the toggle target — dark is the default, see below). */
+    --bg: 210 25% 98%;
+    --surface: 0 0% 100%;
+    --elevated: 210 30% 96%;
+    --line: 214 20% 87%;
+    --fg: 222 32% 11%;
+    --muted: 215 16% 38%;
+    /* Darker accent in light mode so text on white keeps AA contrast. */
+    --accent: var(--accent-hue) var(--accent-sat) 27%;
+    --accent-soft: var(--accent-hue) 60% 94%;
+
+    color-scheme: light;
+  }
+
+  .dark {
+    --bg: 222 24% 6%;
+    --surface: 222 20% 9%;
+    --elevated: 222 18% 13%;
+    --line: 220 14% 19%;
+    --fg: 210 22% 96%;
+    --muted: 215 15% 66%;
+    --accent: var(--accent-hue) var(--accent-sat) 52%;
+    --accent-soft: var(--accent-hue) 60% 14%;
+
+    color-scheme: dark;
+  }
+
+  * {
+    @apply border-line;
+  }
+
+  html {
+    /* Sticky-nav-aware smooth scrolling for the anchor links. */
+    scroll-behavior: smooth;
+    scroll-padding-top: 5.5rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-bg text-fg antialiased;
+    font-feature-settings: "cv11", "ss01";
+  }
+
+  /* Visible, on-brand focus ring for keyboard users on every interactive element. */
+  :focus-visible {
+    @apply outline-none ring-2 ring-accent ring-offset-2 ring-offset-bg rounded-sm;
+  }
+
+  ::selection {
+    @apply bg-accent/30 text-fg;
+  }
+
+  /* Users who ask for less motion get none of it. */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  /* Monospace micro-label used above every section title. */
+  .eyebrow {
+    @apply font-mono text-xs uppercase tracking-[0.2em] text-accent;
+  }
+
+  /* The standard card surface, reused by every section. */
+  .card {
+    @apply rounded-xl border border-line bg-surface p-5 transition-colors duration-200;
+  }
+
+  .card-interactive {
+    @apply card hover:border-accent/50;
+  }
+
+  /* Small pill used for tech tags and skills. */
+  .tag {
+    @apply inline-flex items-center rounded-md border border-line bg-elevated px-2 py-1 font-mono text-[11px] leading-none text-muted transition-all duration-200;
+  }
+
+  .tag:hover {
+    @apply -translate-y-px border-accent/40 text-fg;
+  }
+
+  .link-underline {
+    @apply text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:decoration-accent;
+  }
+}
+
+/* ==========================================================================
+   MOTION
+   --------------------------------------------------------------------------
+   Everything here is GPU-cheap (transform / opacity only) and is switched off
+   wholesale by the prefers-reduced-motion block in the base layer.
+   ========================================================================== */
+
+@keyframes grid-drift {
+  from {
+    background-position: 0 0, 0 0;
+  }
+  to {
+    background-position: 56px 56px, 56px 56px;
+  }
+}
+
+@keyframes scan {
+  0% {
+    transform: translateY(-10vh);
+    opacity: 0;
+  }
+  8%,
+  92% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(110vh);
+    opacity: 0;
+  }
+}
+
+@keyframes blink {
+  0%,
+  49% {
+    opacity: 1;
+  }
+  50%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes ping-ring {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.7;
+  }
+  70%,
+  100% {
+    transform: scale(2.2);
+    opacity: 0;
+  }
+}
+
+@keyframes orbit-dash {
+  to {
+    stroke-dashoffset: -1000;
+  }
+}
+
+@keyframes float-y {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@layer utilities {
+  /* Perspective grid behind the hero — the "infrastructure" backdrop. */
+  .grid-backdrop {
+    background-image: linear-gradient(
+        to right,
+        hsl(var(--line) / 0.55) 1px,
+        transparent 1px
+      ),
+      linear-gradient(to bottom, hsl(var(--line) / 0.55) 1px, transparent 1px);
+    background-size: 56px 56px;
+    mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 40%, transparent 100%);
+    animation: grid-drift 18s linear infinite;
+  }
+
+  /* Slow horizontal sweep, like a scope refreshing. */
+  .scanline {
+    background: linear-gradient(
+      to bottom,
+      transparent,
+      hsl(var(--accent) / 0.5),
+      transparent
+    );
+    animation: scan 9s linear infinite;
+  }
+
+  /* Terminal caret. */
+  .caret {
+    animation: blink 1.1s step-end infinite;
+  }
+
+  /* Expanding ring behind the "available" status dot. */
+  .ping-ring {
+    animation: ping-ring 2.4s cubic-bezier(0, 0, 0.2, 1) infinite;
+  }
+
+  .float-y {
+    animation: float-y 6s ease-in-out infinite;
+  }
+
+  /* Travelling dash along an SVG path — used for the data-flow motif. */
+  .orbit-dash {
+    stroke-dasharray: 6 10;
+    animation: orbit-dash 14s linear infinite;
+  }
+
+  /* Mouse-follow glow. --mx/--my are set from JS in SpotlightCard. */
+  .spotlight::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    background: radial-gradient(
+      320px circle at var(--mx, 50%) var(--my, 0%),
+      hsl(var(--accent) / 0.14),
+      transparent 65%
+    );
+    pointer-events: none;
+  }
+
+  .spotlight:hover::before,
+  .spotlight:focus-within::before {
+    opacity: 1;
+  }
+
+  /* Respect the user's setting for the looping decorations too. */
+  @media (prefers-reduced-motion: reduce) {
+    .grid-backdrop,
+    .scanline,
+    .caret,
+    .ping-ring,
+    .float-y,
+    .orbit-dash {
+      animation: none !important;
+    }
+
+    .scanline {
+      display: none;
+    }
+  }
+}
