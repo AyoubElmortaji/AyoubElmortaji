@@ -9,6 +9,50 @@ export type NavLink = {
   label: string;
 };
 
+/** Used when no environment variable supplies a usable URL. */
+const FALLBACK_SITE_URL = "https://ayoub-elmortaji.vercel.app";
+
+/**
+ * Resolve the canonical site URL.
+ *
+ * This is deliberately defensive, because a bad value here breaks the whole
+ * production build: `metadataBase` feeds `new URL()`, which throws on an empty
+ * or malformed string. Two real cases it guards against:
+ *
+ *  - The variable exists but is EMPTY (e.g. added in the Vercel dashboard with
+ *    a blank value). `??` would happily keep `""`, so we test truthiness.
+ *  - The variable holds something that is not a valid absolute URL, or is a
+ *    bare hostname like "ayoub.com" with no scheme.
+ *
+ * Note: `process.env.NEXT_PUBLIC_*` must be written out in full for Next.js to
+ * inline it at build time — do not refactor these into a loop over names.
+ */
+function resolveSiteUrl(): string {
+  const vercelUrl = process.env.NEXT_PUBLIC_VERCEL_URL;
+
+  const candidates = [
+    process.env.NEXT_PUBLIC_SITE_URL,
+    // Vercel injects this on every deployment, so previews get correct metadata.
+    vercelUrl ? `https://${vercelUrl}` : undefined,
+    FALLBACK_SITE_URL,
+  ];
+
+  for (const candidate of candidates) {
+    const value = candidate?.trim();
+    if (!value) continue;
+
+    const withScheme = /^https?:\/\//i.test(value) ? value : `https://${value}`;
+    try {
+      // `.origin` also normalises away any trailing slash or path.
+      return new URL(withScheme).origin;
+    } catch {
+      // Not a usable URL — fall through to the next candidate.
+    }
+  }
+
+  return FALLBACK_SITE_URL;
+}
+
 export const site = {
   name: "Ayoub ELMORTAJI",
   role: "Cybersecurity & Cloud Engineer",
@@ -16,8 +60,8 @@ export const site = {
   title: "Ayoub ELMORTAJI — Cybersecurity & Cloud Engineer",
   description:
     "Final-year Cybersecurity & Cloud Computing engineering student at ENSAM Casablanca. AI Security, Cloud Security & DevSecOps. PFE available from January 2027.",
-  /** Falls back to the Vercel preview URL when the env var is unset. */
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://ayoub-elmortaji.vercel.app",
+  /** Always a valid absolute URL — see resolveSiteUrl() above. */
+  url: resolveSiteUrl(),
   locale: "en",
   keywords: [
     "Ayoub ELMORTAJI",

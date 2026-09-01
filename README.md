@@ -258,7 +258,11 @@ git-ignored** (`.env*` is listed in `.gitignore`) - never commit it.
 | `NEXT_PUBLIC_SITE_URL` | Canonical URL used for metadata, Open Graph and the sitemap |
 
 Point `NEXT_PUBLIC_SITE_URL` at your real domain once it is live, so the
-canonical link, `sitemap.xml` and the Open Graph tags all agree.
+canonical link, `sitemap.xml` and the Open Graph tags all agree. It is optional
+and forgiving: leave it unset, blank, or write a bare hostname
+(`ayoub-elmortaji.com`) and `resolveSiteUrl()` in `data/site.ts` sorts it out -
+falling back to Vercel's own deployment URL, then to a literal default. A bad
+value can never fail the build.
 
 > **Note on `NEXT_PUBLIC_`:** variables with this prefix are inlined into the
 > browser bundle, so treat them as public. Never put a real secret (API key,
