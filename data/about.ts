@@ -49,21 +49,21 @@ export const hero: Hero = {
   name: "Ayoub ELMORTAJI",
   title: "Cybersecurity & Cloud Engineer",
   tagline:
-    "Final-year engineering student at ENSAM Casablanca — AI Security, Cloud Security & DevSecOps. PFE available from January 2027.",
+    "Final-year engineering student at ENSAM Casablanca . PFE available from January 2027.",
   status: "Available for PFE — Jan 2027",
   terminal: [
     { command: "whoami", output: "ayoub.elmortaji" },
     { command: "cat /etc/role", output: "Cybersecurity & Cloud Engineer" },
-    { command: "ls ~/focus", output: "cloud-security  ai-red-team  devsecops  soc-dfir" },
+    { command: "ls ~/focus", output: "cloud-security  ai-red-team  devsecops  soc-dfir " },
     { command: "status --pfe", output: "OPEN · January 2027" },
   ],
 };
 
 export const about: About = {
-  bio: "Final-year Cybersecurity & Cloud Computing engineering student at ENSAM Casablanca, available for a final-year internship (PFE) from January 2027. I work across AI Security / AI Red Teaming, Cloud Security, DevSecOps, SOC & Threat Intelligence, DFIR, and OT/SCADA security. Based in Mohammedia, Morocco.",
+  bio: "Final-year Cybersecurity & Cloud Computing engineering student at ENSAM Casablanca, available for a final-year internship (PFE) from January 2027. I work across AI Security / AI Red Teaming, Cloud Security, DevSecOps, SOC & Threat Intelligence, DFIR, and OT/SCADA security. Based in Morocco.",
   /** Short facts rendered as a key/value list next to the bio. */
   facts: [
-    { label: "Location", value: "Mohammedia, Morocco" },
+    { label: "Location", value: "Morocco" },
     { label: "Availability", value: "PFE — January 2027" },
     {
       label: "Focus",
