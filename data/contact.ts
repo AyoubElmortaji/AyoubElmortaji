@@ -11,14 +11,13 @@ export type SocialLink = {
 
 export const contact = {
   email: "aelmortaji7@gmail.com",
-  phone: "+212 625 725 861",
-  /** Phone in dial format for the tel: link. */
-  
+
   linkedin: "https://linkedin.com/in/ayoub-elmortaji",
   github: "https://github.com/AyoubElmortaji",
+
   /** Short pitch above the contact form. */
   blurb:
-    "Looking for a PFE intern in Cyberecurity, Cloud   from January 2027?  My inbox is open.",
+    "Looking for a PFE internship in Cybersecurity & Cloud starting January 2027? My inbox is open.",
 };
 
 /** Rendered as the contact list and in the footer. */
@@ -28,12 +27,6 @@ export const socials: SocialLink[] = [
     href: `mailto:${contact.email}`,
     icon: "mail",
     display: contact.email,
-  },
-  {
-    label: "Phone",
-    href: `tel:${contact.phoneHref}`,
-    icon: "phone",
-    display: contact.phone,
   },
   {
     label: "LinkedIn",
@@ -46,11 +39,5 @@ export const socials: SocialLink[] = [
     href: contact.github,
     icon: "github",
     display: "AyoubElmortaji",
-  },
-  {
-    label: "Location",
-    href: "https://www.openstreetmap.org/search?query=Mohammedia%2C%20Morocco",
-    icon: "location",
-    display: contact.location,
   },
 ];
