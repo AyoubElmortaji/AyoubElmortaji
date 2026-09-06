@@ -24,13 +24,7 @@ const personJsonLd = {
   jobTitle: site.role,
   description: about.bio,
   email: `mailto:${contact.email}`,
-  telephone: contact.phone,
   url: site.url,
-  address: {
-    "@type": "PostalAddress",
-    addressLocality: "Mohammedia",
-    addressCountry: "MA",
-  },
   alumniOf: education.map((entry) => ({
     "@type": "EducationalOrganization",
     name: entry.school,
@@ -52,7 +46,6 @@ export default function HomePage() {
       <Nav />
 
       <main id="main">
-        {/* Each section renders by mapping over its own file in /data. */}
         <Hero />
         <Providers />
         <About />
